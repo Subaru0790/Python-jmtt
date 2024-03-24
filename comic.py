@@ -20,7 +20,7 @@ public_headers={
    'cookie':'__cfduid=d3af1fe4e02395143768f49120192d89a1612161290; _gid=GA1.2.537470263.1612161292; shunt=1; AVS=pgucjspmo4rgafa4vinl3feug4; ipcountry=TW; ipm5=ad96616d894884f20b4e263448a05911; _ga_YYJWNTTJEN=GS1.1.1612339484.9.1.1612339785.59; _gat_ga0=1; _gat_ga1=1; _ga=GA1.2.2093487367.1612161292; _gat_gtag_UA_99252457_3=1; cover=1; _gali=chk_cover',
     'User-Agent':ua.random
 }
-path = input('请输入无需处理的漫画保存路径：')                #替换自己的路径并把\换成/
+path = input('请输入无需处理的漫画保存路径：H:/漫画/')                #替换自己的路径并把\换成/
 #大类（分类）链接转换为目录和开始阅读链接
 def getData(url):
     try:
@@ -209,9 +209,9 @@ def convertImg(img_url):
     #img_new.show() # 调试显示转化后的图片
     img_new.save(img_url)
 #需要爬取的页数
-page= int(input('请输入想要获取的页数：'))
+page= int(input('请输入想要获取的页数：1'))
 #需要解析的链接
-pageurl= input('请输入想获取的分类链接：')                                                         # https://18comic.vip/search/photos?search_query=%E6%AF%8D%E5%AD%90&page=3 https://18comic1.one/search/photos?search_query=%E6%88%91%E8%A6%81%E6%88%90%E4%B8%BA%E5%8D%83%E9%87%91%E7%8C%8E%E4%BA%BA&main_tag=0
+pageurl= input('请输入想获取的分类链接：https://18comic.vip/album/398986/')                                                         # https://18comic.vip/search/photos?search_query=%E6%AF%8D%E5%AD%90&page=3 https://18comic1.one/search/photos?search_query=%E6%88%91%E8%A6%81%E6%88%90%E4%B8%BA%E5%8D%83%E9%87%91%E7%8C%8E%E4%BA%BA&main_tag=0
 #控制爬取的页数                                                                                   # https://18comic1.one/search/photos?search_query=%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85-%E9%B8%A3%E4%BA%BA%E4%B8%8E%E5%AE%B6%E4%BA%BAV2&main_tag=0
 count=0
 while count<page:
